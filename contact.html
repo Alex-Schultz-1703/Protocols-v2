@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="style.css">
+    
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contact-page">
+          <div class="contact-card">
+            <div class="contact-header-row">
+              <div class="contact-header-and-calendar">
+                <div class="contact-header">
+                  <h1 class="big-title text-black">Contact</h1>
+                  <img src="images/logo1.png" alt="Logo" class="img-con" />
+                </div>
+                <p class="intro-text">
+                  Оставьте заявку — мы предложим эффективное IT-решение для вашего бизнеса или госструктуры.
+                </p>
+                <div class="calendar-wrapper">
+                  <div class="calendar">
+                    <div class="tablet-screen">
+                      
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="contact-info">
+                  <div class="contact-item">
+                    <div class="label">КПП</div>
+                    <div class="value">777777777</div>
+                  </div>
+                  <div class="contact-item">
+                    <div class="label">ИНН</div>
+                    <div class="value">9999999999</div>
+                  </div>
+                  <div class="contact-item">
+                    <div class="label">ОГРН</div>
+                    <div class="value">1111111111111</div>
+                  </div>
+                  <div class="contact-item">
+                    <div class="label">График работы</div>
+                    <div class="value">Пн–пт с 08:00 до 20:00</div>
+                  </div>
+                </div>
+              </div>
+              <form class="form" action="send-mail.php" method="post" enctype="multipart/form-data">
+                <div class="fields">
+                  <label>ИМЯ
+                    <input type="text" name="name" placeholder="Иван" required />
+                  </label>
+                  <label>ПОЧТА
+                    <input type="email" name="email" placeholder="Email-адрес" required />
+                  </label>
+                  <label>НОМЕР
+                    <input type="tel" name="phone" placeholder="+7" required />
+                  </label>
+                  
+                  <label>СООБЩЕНИЕ
+                    <textarea name="message" placeholder="Печатай..." required></textarea>
+                  </label>
+                </div>
+
+                <div class="form-footer">
+                  <div class="actions">
+                    <label for="file" class="custom-file-label1">Добавить файл</label>
+                    <input type="file" id="file" name="file" style="display:none;">
+                    <button type="submit">ОТПРАВИТЬ →</button>
+                  </div>
+
+                  <div class="contact-info1">
+                    <div class="contact-item">
+                      <div class="label">Телефон</div>
+                      <div class="value"><a href="tel:84959883508">+7 777 777 77 77</a></div>
+                    </div>
+                    <div class="contact-item">
+                      <div class="label">Отдел продаж</div>
+                      <div class="value"><a href="mailto:office@systemamsk.ru">office@LumenForge.ru</a></div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+    </section>
+</body>
+</html>

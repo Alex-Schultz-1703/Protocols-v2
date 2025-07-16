@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Document</title>
+
+	<script src="libs/gsap/gsap.min.js" defer></script>
+	<script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+	<script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/app.js" defer></script>
+
+</head>
+<body>
+
+	<div class="wrapper">
+		<div class="content">
+
+			<header class="hero-section">
+				<img data-speed=".6" class="hero" src="img/cybersec.png" alt="Alt" >
+				<div class="container">
+					<div data-speed=".75" class="main-header">
+						<h1 class="protocols__title">Protocols</h1>
+					</div>
+				</div>
+			</header>
+		
+			<div class="portfolio">
+				<div class="container">
+					<main class="gallery">
+	
+						<div data-speed=".9" class="gallery__left">
+		
+							<div class="card" id="card">
+    							<!-- Слой фона -->
+								<div class="layer bg" data-depth="0.1">
+								<img src="bg.jpg" alt="Background">
+								</div>
+								<!-- Слой с изображением продукта -->
+								<div class="layer" data-depth="0.4">
+								<img src="product.png" alt="Product">
+								</div>
+								<!-- Текстовый слой -->
+								<div class="layer" data-depth="0.7">
+								<h1>SMART<br>WITH<br>TECH</h1>
+								<p>Описание вашей карточки</p>
+								</div>
+							</div>
+		
+							<div class="text-block gallery__item">
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<h2 class="text-block__h">Protocol 2</h2>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+							</div>
+		
+							<div class="card" id="card">
+    							<!-- Слой фона -->
+								<div class="layer bg" data-depth="0.1">
+								<img src="bg1.jpg" alt="Background">
+								</div>
+								<!-- Слой с изображением продукта -->
+								<div class="layer" data-depth="0.4">
+								<img src="product.png" alt="Product">
+								</div>
+								<!-- Текстовый слой -->
+								<div class="layer" data-depth="0.7">
+								<h1>SMART<br>WITH<br>TECH</h1>
+								<p>Описание вашей карточки</p>
+								</div>
+							</div>
+		
+						</div>
+
+						<div data-speed="1.1" class="gallery__right">
+		
+							<div class="text-block gallery__item">
+								<h2 class="text-block__h">Protocol 1</h2>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+							</div>
+		
+							
+							<div class="card" id="card">
+    							<!-- Слой фона -->
+								<div class="layer bg" data-depth="0.1">
+								<img src="bg2.jpg" alt="Background">
+								</div>
+								<!-- Слой с изображением продукта -->
+								<div class="layer" data-depth="0.4">
+								<img src="product.png" alt="Product">
+								</div>
+								<!-- Текстовый слой -->
+								<div class="layer" data-depth="0.7">
+								<h1>SMART<br>WITH<br>TECH</h1>
+								<p>Описание вашей карточки</p>
+								</div>
+							</div>
+							<div class="text-block gallery__item">
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<h2 class="text-block__h">Protocol 3</h2>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+
+							</div>
+		
+						</div>
+
+					</main>
+					<main class="gallery">
+	
+						<div data-speed=".9" class="gallery__left">
+		
+							<div class="card" id="card">
+    							<!-- Слой фона -->
+								<div class="layer bg" data-depth="0.1">
+								<img src="bg6.jpg" alt="Background">
+								</div>
+								<!-- Слой с изображением продукта -->
+								<div class="layer" data-depth="0.4">
+								<img src="product.png" alt="Product">
+								</div>
+								<!-- Текстовый слой -->
+								<div class="layer" data-depth="0.7">
+								<h1>SMART<br>WITH<br>TECH</h1>
+								<p>Описание вашей карточки</p>
+								</div>
+							</div>
+		
+							<div class="text-block gallery__item">
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<h2 class="text-block__h">Protocol 5</h2>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+							</div>
+		
+							<div class="card" id="card">
+    							<!-- Слой фона -->
+								<div class="layer bg" data-depth="0.1">
+								<img src="bg7.jpg" alt="Background">
+								</div>
+								<!-- Слой с изображением продукта -->
+								<div class="layer" data-depth="0.4">
+								<img src="product.png" alt="Product">
+								</div>
+								<!-- Текстовый слой -->
+								<div class="layer" data-depth="0.7">
+								<h1>SMART<br>WITH<br>TECH</h1>
+								<p>Описание вашей карточки</p>
+								</div>
+							</div>
+		
+						</div>
+
+						<div data-speed="1.1" class="gallery__right">
+		
+							<div class="text-block gallery__item">
+								<h2 class="text-block__h">Protocol 4</h2>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+							</div>
+		
+							
+							<div class="card" id="card">
+    							<!-- Слой фона -->
+								<div class="layer bg" data-depth="0.1">
+								<img src="bg8.jpg" alt="Background">
+								</div>
+								<!-- Слой с изображением продукта -->
+								<div class="layer" data-depth="0.4">
+								<img src="product.png" alt="Product">
+								</div>
+								<!-- Текстовый слой -->
+								<div class="layer" data-depth="0.7">
+								<h1>SMART<br>WITH<br>TECH</h1>
+								<p>Описание вашей карточки</p>
+								</div>
+							</div>
+							<div class="text-block gallery__item">
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<h2 class="text-block__h">Protocol 6</h2>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+
+							</div>
+		
+						</div>
+
+					</main>
+					<main class="gallery">
+	
+						<div data-speed=".9" class="gallery__left">
+		
+							<div class="card" id="card">
+    							<!-- Слой фона -->
+								<div class="layer bg" data-depth="0.1">
+								<img src="bg9.jpg" alt="Background">
+								</div>
+								<!-- Слой с изображением продукта -->
+								<div class="layer" data-depth="0.4">
+								<img src="product.png" alt="Product">
+								</div>
+								<!-- Текстовый слой -->
+								<div class="layer" data-depth="0.7">
+								<h1>SMART<br>WITH<br>TECH</h1>
+								<p>Описание вашей карточки</p>
+								</div>
+							</div>
+		
+							<div class="text-block gallery__item">
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<h2 class="text-block__h">Protocol 5</h2>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+							</div>
+		
+							<div class="card" id="card">
+    							<!-- Слой фона -->
+								<div class="layer bg" data-depth="0.1">
+								<img src="bg10.jpg" alt="Background">
+								</div>
+								<!-- Слой с изображением продукта -->
+								<div class="layer" data-depth="0.4">
+								<img src="product.png" alt="Product">
+								</div>
+								<!-- Текстовый слой -->
+								<div class="layer" data-depth="0.7">
+								<h1>SMART<br>WITH<br>TECH</h1>
+								<p>Описание вашей карточки</p>
+								</div>
+							</div>
+		
+						</div>
+
+						<div data-speed="1.1" class="gallery__right">
+		
+							<div class="text-block gallery__item">
+								<h2 class="text-block__h">Protocol 4</h2>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+							</div>
+		
+							
+							<div class="card" id="card">
+    							<!-- Слой фона -->
+								<div class="layer bg" data-depth="0.1">
+								<img src="bg11.jpg" alt="Background">
+								</div>
+								<!-- Слой с изображением продукта -->
+								<div class="layer" data-depth="0.4">
+								<img src="product.png" alt="Product">
+								</div>
+								<!-- Текстовый слой -->
+								<div class="layer" data-depth="0.7">
+								<h1>SMART<br>WITH<br>TECH</h1>
+								<p>Описание вашей карточки</p>
+								</div>
+							</div>
+							<div class="text-block gallery__item">
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<div class="noc">.</div>
+								<h2 class="text-block__h">Protocol 6</h2>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+								<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+
+							</div>
+		
+						</div>
+
+					</main>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</body>
+</html>

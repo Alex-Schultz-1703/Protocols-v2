@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Tektur:wght@400..900&display=swap');
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--index: calc(1vw + 1vh);
+	--color-header: #f4efec;
+	--color-text: #cdc6c3;
+	--gallery-gap: calc(var(--index) * 7.5)
+}
+@font-face {
+	font-family: raleway-c;
+	src: url(../fonts/raleway-regular.woff2);
+}
+@font-face {
+	font-family: outfit-c;
+	src: url(../fonts/outfit-regular.woff2);
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: outfit-c;
+}
+/* will-change */
+.content, .hero, .main-header, .gallery > * {
+	will-change: transform;
+}
+body {
+	background-image: url(../img/bg.jpg);
+	background-size: 50px;
+	color: #fafafa;
+	font-family: raleway-c;
+	overflow-x: hidden;
+}
+.hero {
+	width: calc(var(--index) * 36);
+	position: absolute;
+	left: 37vw;
+	top: 22vh;
+	z-index: -1;
+}
+.main-header {
+	height: 100vh;
+}
+.container {
+	padding: 0 7vw;
+}
+.main-title {
+	font-size: calc(var(--index) * 8);
+	position: absolute;
+	width: min-content;
+	bottom: 12vh;
+	line-height: .9;
+}
+.gallery {
+	display: flex;
+	padding: calc(var(--index) * 8) 0;
+}
+.gallery > * {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.gallery__item {
+	max-width: calc(var(--index) * 21);
+	margin-bottom: var(--gallery-gap);
+	max-height: 180vh;
+	border-radius: 8px;
+}
+.gallery__left {
+	margin-top: calc(var(--gallery-gap) * 1.75);
+}
+.gallery__right .gallery__item {
+	margin: 0;
+	margin-top: var(--gallery-gap);
+}
+.text-block {
+	color: var(--color-text);
+	position: relative;
+}
+.text-block__h {
+	font-family: "Tektur", sans-serif;
+	font-size: 3rem;
+	line-height: 2.4rem;
+	color: var(--color-header);
+	margin-bottom: 1.5rem;
+}
+.text-block__p {
+	line-height: 1.75;
+}
+
+
+
+/* ------------------------------------------ */
+/* ---------------Protocols------------------ */
+/* ------------------------------------------ */
+.protocols__title {
+    font-family: "Tektur", sans-serif;
+    font-weight: 800;
+	font-size: calc(var(--index) * 8);
+	position: absolute;
+	width: min-content;
+	bottom: 12vh;
+	line-height: .9;
+}
+
+
+
+/* -------------card--------------- */
+.card {
+  position: relative;
+  width: 530px;
+  height: 720px;
+  perspective: 1000px;
+  overflow: hidden;
+  border-radius: 25px;
+  background: #222;
+}
+
+.layer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-style: preserve-3d;
+  transform-origin: center center;
+  width: 100%;
+}
+
+.layer img {
+  display: block;
+  max-width: 100%;
+  pointer-events: none;
+}
+
+.layer .bg{
+    width: 100%;
+}
+/* Фон */
+.layer[data-depth="0.1"] img {
+  width: 620px;  /* чуть больше, чтобы при параллаксе не было зазоров */
+  transform: translate(-50%, -50%);
+}
+
+/* Продукт */
+.layer[data-depth="0.4"] img {
+  width: 400px;
+  transform: translate(-50%, -50%) translateZ(50px);
+}
+
+/* Текст */
+.layer[data-depth="0.7"] {
+  width: 100%;
+  text-align: center;
+  color: #000000;
+  transform: translate(-50%, -50%) translateZ(100px);
+}
+.layer[data-depth="0.7"] h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.layer[data-depth="0.7"] p {
+  font-size: 1.2rem;
+}
+.noc{
+	color: rgba(1, 1, 1, 0);
+}
